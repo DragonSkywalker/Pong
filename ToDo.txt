@@ -1,0 +1,7 @@
+Main: 
+	1. Make editable text file that modifies the game
+	2. Make dash ability
+	
+Optional:
+	1. Make texture
+	2. Make trail for the ball

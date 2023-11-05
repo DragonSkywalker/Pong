@@ -19,3 +19,9 @@ shape = SubResource("RectangleShape2D_w06j3")
 position = Vector2(3.57628e-07, 1.07288e-06)
 scale = Vector2(20, 142)
 texture = SubResource("PlaceholderTexture2D_n0vdq")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

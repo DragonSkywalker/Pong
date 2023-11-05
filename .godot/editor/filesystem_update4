@@ -1,12 +1,1 @@
 res://Main Scenes/menu.tscn
-res://Global/Game.gd
-res://Objects/ball.gd
-res://Main Scenes/menu.gd
-res://ToDo.txt
-res://Main Scenes/field.gd
-res://Main Scenes/field.tscn
-res://Main Scenes/game_result.gd
-res://Objects/player_1.gd
-res://Objects/player_1.tscn
-res://Objects/player_2.tscn
-res://Objects/player_2.gd

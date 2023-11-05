@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Pong"
+config/name="PongV2"
 run/main_scene="res://Main Scenes/menu.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://icon.svg"
@@ -54,4 +54,4 @@ player2_dash={
 
 [rendering]
 
-renderer/rendering_method="mobile"
+renderer/rendering_method="gl_compatibility"

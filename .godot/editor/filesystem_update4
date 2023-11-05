@@ -1,2 +1,3 @@
 res://Main Scenes/menu.tscn
 res://Global/Game.gd
+res://Objects/ball.gd

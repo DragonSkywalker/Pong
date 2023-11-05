@@ -1,11 +1,13 @@
 extends CharacterBody2D
 
-# var SPEED = 200.0
 var direction: Vector2
 var hasStarted = false
+
 func _ready():
+	if not Game.keepSpeedBetweenRounds:
+		Game.ballSpeed = Game.ballInitialSpeed
 	var rng = RandomNumberGenerator.new()
-	var rng2 = RandomNumberGenerator.new()	
+	var rng2 = RandomNumberGenerator.new()
 	direction.x = rng.randi_range(0, 1)
 	direction.y = rng2.randi_range(0, 1)
 	if direction.x == 0:

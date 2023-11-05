@@ -1,15 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699186728
+::res://::1699195150
+export_presets.cfg::TextFile::-1::1699186841::0::1::::<><>::
 ToDo.txt::TextFile::-1::1699185706::0::1::::<><>::
-::res://Global/::1699186596
-Game.gd::GDScript::-1::1699186533::0::1::::<>Node<>::
-::res://Main Scenes/::1699186718
+::res://Global/::1699187458
+Game.gd::GDScript::-1::1699187458::0::1::::<>Node<>::
+::res://Main Scenes/::1699195108
 field.gd::GDScript::-1::1699181931::0::1::::<>Node2D<>::
-field.tscn::PackedScene::52784819264766020::1699186718::0::1::::<><>::res://Main Scenes/field.gd<>uid://dswn8enkyxmbd::::res://Objects/ball.tscn<>uid://cy047ed2uj07y::::res://Objects/player_1.tscn<>uid://dhjh26tch6xyx::::res://Objects/player_2.tscn
+field.tscn::PackedScene::52784819264766020::1699187458::0::1::::<><>::res://Main Scenes/field.gd<>uid://dswn8enkyxmbd
 game_result.gd::GDScript::-1::1699182113::0::1::::<>Node2D<>::
 game_result.tscn::PackedScene::8248070099927622856::1699107168::0::1::::<><>::res://Main Scenes/game_result.gd<>res://Main Scenes/Winner.gd
 menu.gd::GDScript::-1::1699180128::0::1::::<>Node2D<>::
-menu.tscn::PackedScene::6904161395077345308::1699186718::0::1::::<><>::res://Main Scenes/menu.gd
+menu.tscn::PackedScene::6904161395077345308::1699195108::0::1::::<><>::res://Main Scenes/menu.gd
 score.gd::GDScript::-1::1699156880::0::1::::<>Label<>::
 score_selection.tscn::PackedScene::5496852742338593215::1699157693::0::1::::<><>::res://Main Scenes/score.gd
 Winner.gd::GDScript::-1::1699103810::0::1::::<>Label<>::

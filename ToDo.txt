@@ -1,5 +1,6 @@
 Current:
 	2. Make dash ability
+		i. and then the UI
 
 Main: 
 	1. Make editable text file that modifies the game

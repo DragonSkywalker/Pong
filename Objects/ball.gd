@@ -33,4 +33,4 @@ func _physics_process(delta):
 			direction.x = -1
 		else:
 			var rng = RandomNumberGenerator.new()
-			Game.lastLoser = rng.randi_range(0, 1) * 2 - 1
+			Game.lastLoser = rng.randi_range(1, 2)

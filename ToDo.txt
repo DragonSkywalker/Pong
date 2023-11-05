@@ -1,5 +1,5 @@
 Current:
-	3. Make ball starts with player instead of middle
+
 
 Main: 
 	1. Make editable text file that modifies the game

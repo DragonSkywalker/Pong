@@ -33,7 +33,7 @@ text = "Back
 [node name="Objects" type="Node2D" parent="."]
 
 [node name="Ball" parent="Objects" instance=ExtResource("1_ce66m")]
-position = Vector2(576, 324)
+position = Vector2(576, -137)
 
 [node name="Player1" parent="Objects" instance=ExtResource("1_sy2fa")]
 position = Vector2(150, 324)

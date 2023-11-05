@@ -6,14 +6,9 @@ var hasStarted = false
 func _ready():
 	if not Game.keepSpeedBetweenRounds:
 		Game.ballSpeed = Game.ballInitialSpeed
-	var rng = RandomNumberGenerator.new()
+	
 	var rng2 = RandomNumberGenerator.new()
-	direction.x = rng.randi_range(0, 1)
-	direction.y = rng2.randi_range(0, 1)
-	if direction.x == 0:
-		direction.x = -1
-	if direction.y == 0:
-		direction.y = -1
+	direction.y = rng2.randi_range(0, 1) * 2 - 1
 
 func _physics_process(delta):
 	if hasStarted: 
@@ -28,4 +23,14 @@ func _physics_process(delta):
 					Game.ballSpeed += Game.ballAcceleration
 			else:
 				direction.y *= -1
-				
+	else:
+		if Game.lastLoser == 1:
+			position = get_node("../Player1").position + Vector2(30, 0)
+			direction.x = 1
+			
+		elif Game.lastLoser == 2:
+			position = get_node("../Player2").position + Vector2(-30, 0)
+			direction.x = -1
+		else:
+			var rng = RandomNumberGenerator.new()
+			Game.lastLoser = rng.randi_range(0, 1) * 2 - 1

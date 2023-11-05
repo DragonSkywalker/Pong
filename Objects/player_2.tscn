@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://dhjh26tch6xyx"]
+
+[sub_resource type="GDScript" id="GDScript_giam1"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = Game.playerSpeed
+
+func _physics_process(delta):
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction = Input.get_axis(\"player2_up\", \"player2_down\")
+	if direction:
+		velocity.y = direction * SPEED
+	else:
+		velocity.y = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+	
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w06j3"]
+size = Vector2(2, 142)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_n0vdq"]
+
+[node name="Player2" type="CharacterBody2D"]
+motion_mode = 1
+script = SubResource("GDScript_giam1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-9, 0)
+shape = SubResource("RectangleShape2D_w06j3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(3.57628e-07, 1.07288e-06)
+scale = Vector2(20, 142)
+texture = SubResource("PlaceholderTexture2D_n0vdq")

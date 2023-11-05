@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckkymj781flbj"]
+
+[ext_resource type="Script" path="res://Main Scenes/score.gd" id="1_pxf5a"]
+
+[node name="ScoreSelection" type="Node2D"]
+
+[node name="prompt" type="Label" parent="."]
+offset_right = 1152.0
+offset_bottom = 232.0
+theme_override_font_sizes/font_size = 100
+text = "Score?"
+horizontal_alignment = 1
+vertical_alignment = 2
+metadata/_edit_lock_ = true
+
+[node name="score" type="Label" parent="."]
+offset_top = 172.0
+offset_right = 1152.0
+offset_bottom = 404.0
+theme_override_font_sizes/font_size = 80
+text = "#"
+horizontal_alignment = 1
+vertical_alignment = 2
+script = ExtResource("1_pxf5a")
+
+[node name="minus" type="Button" parent="."]
+offset_left = 448.0
+offset_top = 320.0
+offset_right = 512.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 40
+text = "-"
+
+[node name="plus" type="Button" parent="."]
+offset_left = 640.0
+offset_top = 320.0
+offset_right = 704.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 40
+text = "+"
+
+[node name="continue" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 448.0
+offset_right = 640.0
+offset_bottom = 512.0
+theme_override_font_sizes/font_size = 40
+text = "Enter"
+
+[connection signal="pressed" from="minus" to="score" method="_on_minus_pressed"]
+[connection signal="pressed" from="plus" to="score" method="_on_plus_pressed"]
+[connection signal="pressed" from="continue" to="score" method="_on_continue_pressed"]

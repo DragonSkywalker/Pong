@@ -3,6 +3,7 @@ extends CharacterBody2D
 var direction: Vector2
 var hasStarted = false
 var collideTimes = 0
+const initDistanceFromPlayer = Vector2(40, 0)
 
 func _ready():
 	if not Game.keepSpeedBetweenRounds:
@@ -27,11 +28,11 @@ func _physics_process(delta):
 				direction.y *= -1
 	else:
 		if Game.lastLoser == 1:
-			position = get_node("../Player1").position + Vector2(30, 0)
+			position = get_node("../Player1").position + initDistanceFromPlayer
 			direction.x = 1
 			
 		elif Game.lastLoser == 2:
-			position = get_node("../Player2").position + Vector2(-30, 0)
+			position = get_node("../Player2").position - initDistanceFromPlayer
 			direction.x = -1
 		else:
 			var rng = RandomNumberGenerator.new()

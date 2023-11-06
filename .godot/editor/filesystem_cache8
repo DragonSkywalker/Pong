@@ -1,21 +1,25 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699250015
+::res://::1699252943
 export_presets.cfg::TextFile::-1::1699248948::0::1::::<><>::
-ToDo.txt::TextFile::-1::1699248948::0::1::::<><>::
-::res://Global/::1699248948
-Game.gd::GDScript::-1::1699248948::0::1::::<>Node<>::
-::res://Main Scenes/::1699249946
-field.gd::GDScript::-1::1699181931::0::1::::<>Node2D<>::
-field.tscn::PackedScene::52784819264766020::1699249946::0::1::::<><>::res://Main Scenes/field.gd<>uid://dswn8enkyxmbd::::res://Objects/ball.tscn<>uid://cy047ed2uj07y::::res://Objects/player.tscn
+ToDo.txt::TextFile::-1::1699251633::0::1::::<><>::
+::res://Assets/::1699254452
+Ball.png::CompressedTexture2D::1619988727388167459::1699252882::1699252907::1::::<><>::
+Player.png::CompressedTexture2D::4321073509198541703::1699253835::1699253845::1::::<><>::
+PlayerV2.png::CompressedTexture2D::2437855951222191958::1699254444::1699254453::1::::<><>::
+::res://Global/::1699251467
+Game.gd::GDScript::-1::1699251467::0::1::::<>Node<>::
+::res://Main Scenes/::1699254329
+field.gd::GDScript::-1::1699251467::0::1::::<>Node2D<>::
+field.tscn::PackedScene::52784819264766020::1699254329::0::1::::<><>::res://Main Scenes/field.gd<>uid://dswn8enkyxmbd::::res://Objects/ball.tscn<>uid://cy047ed2uj07y::::res://Objects/player.tscn
 game_result.gd::GDScript::-1::1699182113::0::1::::<>Node2D<>::
 game_result.tscn::PackedScene::8248070099927622856::1699107168::0::1::::<><>::res://Main Scenes/game_result.gd<>res://Main Scenes/Winner.gd
-menu.gd::GDScript::-1::1699180128::0::1::::<>Node2D<>::
-menu.tscn::PackedScene::6904161395077345308::1699249946::0::1::::<><>::res://Main Scenes/menu.gd
+menu.gd::GDScript::-1::1699251704::0::1::::<>Node2D<>::
+menu.tscn::PackedScene::6904161395077345308::1699254329::0::1::::<><>::res://Main Scenes/menu.gd
 score.gd::GDScript::-1::1699156880::0::1::::<>Label<>::
 score_selection.tscn::PackedScene::5496852742338593215::1699157693::0::1::::<><>::res://Main Scenes/score.gd
 Winner.gd::GDScript::-1::1699103810::0::1::::<>Label<>::
-::res://Objects/::1699249968
-ball.gd::GDScript::-1::1699249968::0::1::::<>CharacterBody2D<>::
-ball.tscn::PackedScene::8468926029921228941::1699107168::0::1::::<><>::res://Objects/ball.gd
-player.gd::GDScript::-1::1699249925::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::6510801212727338596::1699249968::0::1::::<><>::res://Objects/player.gd
+::res://Objects/::1699254329
+ball.gd::GDScript::-1::1699254045::0::1::::<>CharacterBody2D<>::
+ball.tscn::PackedScene::8468926029921228941::1699254329::0::1::::<><>::res://Objects/ball.gd<>uid://xcy8if261p5l::::res://Assets/Ball.png
+player.gd::GDScript::-1::1699251467::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::6510801212727338596::1699254329::0::1::::<><>::res://Objects/player.gd<>uid://b2tfpjqol5yjv::::res://Assets/Player.png

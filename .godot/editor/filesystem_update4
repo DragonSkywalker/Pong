@@ -1,3 +1,7 @@
 res://Main Scenes/menu.tscn
 res://Main Scenes/field.tscn
+res://ToDo.txt
+res://Objects/ball.gd
 res://Global/Game.gd
+res://Objects/player_1.tscn
+res://Objects/player_2.tscn

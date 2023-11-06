@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 var direction: Vector2
 var hasStarted = false
+var collideTimes = 0
 
 func _ready():
 	if not Game.keepSpeedBetweenRounds:
@@ -18,6 +19,8 @@ func _physics_process(delta):
 		
 		if collision:
 			if collision.get_collider().is_class("CharacterBody2D"):
+				collideTimes += 1
+				print(collideTimes)
 				direction.x *= -1
 				if Game.ballSpeed <= 2000:
 					Game.ballSpeed += Game.ballAcceleration

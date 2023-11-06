@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://0tmgfdrr5ie"]
+[gd_scene load_steps=9 format=3 uid="uid://0tmgfdrr5ie"]
 
 [ext_resource type="Script" path="res://Main Scenes/field.gd" id="1_2nrvi"]
 [ext_resource type="PackedScene" uid="uid://dswn8enkyxmbd" path="res://Objects/ball.tscn" id="1_ce66m"]
-[ext_resource type="PackedScene" uid="uid://cy047ed2uj07y" path="res://Objects/player_1.tscn" id="1_sy2fa"]
-[ext_resource type="PackedScene" uid="uid://dhjh26tch6xyx" path="res://Objects/player_2.tscn" id="4_w3vth"]
+[ext_resource type="PackedScene" uid="uid://cy047ed2uj07y" path="res://Objects/player.tscn" id="1_sy2fa"]
 
 [sub_resource type="GDScript" id="GDScript_nx5dv"]
 script/source = "extends Label
@@ -88,8 +87,9 @@ position = Vector2(248, 288)
 [node name="Player1" parent="Objects" instance=ExtResource("1_sy2fa")]
 position = Vector2(150, 324)
 
-[node name="Player2" parent="Objects" instance=ExtResource("4_w3vth")]
+[node name="Player2" parent="Objects" instance=ExtResource("1_sy2fa")]
 position = Vector2(1002, 324)
+rotation = 3.14159
 
 [node name="Wall" type="StaticBody2D" parent="."]
 

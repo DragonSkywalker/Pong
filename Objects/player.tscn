@@ -1,15 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://cy047ed2uj07y"]
 
-[ext_resource type="Script" path="res://Objects/player_1.gd" id="1_0pg56"]
+[ext_resource type="Script" path="res://Objects/player.gd" id="1_byq0e"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_n0vdq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w06j3"]
 size = Vector2(142, 0)
 
-[node name="Player1" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 motion_mode = 1
-script = ExtResource("1_0pg56")
+script = ExtResource("1_byq0e")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3.57628e-07, 1.07288e-06)

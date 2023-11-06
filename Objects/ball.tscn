@@ -1,13 +1,53 @@
-[gd_scene load_steps=4 format=3 uid="uid://dswn8enkyxmbd"]
+[gd_scene load_steps=10 format=3 uid="uid://dswn8enkyxmbd"]
 
 [ext_resource type="Script" path="res://Objects/ball.gd" id="1_frhab"]
+[ext_resource type="Texture2D" uid="uid://kcwhcy224ov7" path="res://Assets/Fireball/FB001.png" id="2_1prpy"]
 [ext_resource type="Texture2D" uid="uid://xcy8if261p5l" path="res://Assets/Ball.png" id="2_5cjgq"]
+[ext_resource type="Texture2D" uid="uid://p7al0gq2di7s" path="res://Assets/Fireball/FB002.png" id="3_wy0dv"]
+[ext_resource type="Texture2D" uid="uid://4numm4w1su7i" path="res://Assets/Fireball/FB003.png" id="4_4tvof"]
+[ext_resource type="Texture2D" uid="uid://dcajo4rkftosq" path="res://Assets/Fireball/FB004.png" id="5_1m4ja"]
+[ext_resource type="Texture2D" uid="uid://d0sk3j1ru10c" path="res://Assets/Fireball/FB005.png" id="6_y0jk1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7mo7f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1prpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wy0dv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4tvof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1m4ja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y0jk1")
+}],
+"loop": true,
+"name": &"fire",
+"speed": 12.0
+}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_toicm"]
 
 [node name="Ball" type="CharacterBody2D"]
 scale = Vector2(1.5, 1.5)
 script = ExtResource("1_frhab")
+
+[node name="Fire" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(-1.01328e-06, 0)
+rotation = 0.785398
+scale = Vector2(1.4, 1.4)
+sprite_frames = SubResource("SpriteFrames_7mo7f")
+animation = &"fire"
+autoplay = "fire"
+frame = 2
+frame_progress = 0.493801
+offset = Vector2(-13, 1.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_5cjgq")

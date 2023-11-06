@@ -14,6 +14,9 @@ func _ready():
 
 func _physics_process(delta):
 	if hasStarted: 
+		get_node("Fire").visible = true
+		get_node("Fire").rotation = rotateFormula(direction)
+		
 		velocity = direction * Game.ballSpeed * delta
 		
 		var collision = move_and_collide(velocity)
@@ -37,3 +40,6 @@ func _physics_process(delta):
 		else:
 			var rng = RandomNumberGenerator.new()
 			Game.lastLoser = rng.randi_range(1, 2)
+
+func rotateFormula(v: Vector2):
+	return (-v.x + 2) * v.y * PI / 4

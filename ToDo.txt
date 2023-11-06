@@ -1,9 +1,10 @@
 Current:
-	2. Make trail for the ball
+	2. Add random vertical deviation when hitting the ball
 
 Main: 
 	1. Make editable text file that modifies the game
+	2. Add random vertical deviation when hitting the ball
+	3. Add background
 	
 Optional:
-	2. Make trail for the ball
 	4. Make a bot

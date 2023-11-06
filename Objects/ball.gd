@@ -20,7 +20,6 @@ func _physics_process(delta):
 		if collision:
 			if collision.get_collider().is_class("CharacterBody2D"):
 				collideTimes += 1
-				print(collideTimes)
 				direction.x *= -1
 				if Game.ballSpeed <= 2000:
 					Game.ballSpeed += Game.ballAcceleration

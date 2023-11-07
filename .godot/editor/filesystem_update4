@@ -1,11 +1,8 @@
-res://Main Scenes/field.tscn
-res://Main Scenes/menu.tscn
-res://Objects/ball.tscn
-res://Global/Game.gd
-res://Main Scenes/field.gd
 res://Objects/player.tscn
-res://ToDo.txt
-res://Objects/ball.gd
-res://Main Scenes/menu.gd
 res://Objects/player.gd
-res://Objects/ball.gdshader
+res://Main Scenes/menu.tscn
+res://Main Scenes/field.tscn
+res://Objects/ball.tscn
+res://Main Scenes/Background.tscn
+res://Main Scenes/Background.gd
+res://Main Scenes/score_selection.tscn

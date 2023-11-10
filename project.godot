@@ -21,6 +21,10 @@ Game="*res://Global/Game.gd"
 Utils="*res://Global/Utils.gd"
 Background="*res://Global/Background.tscn"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 player1_up={

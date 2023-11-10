@@ -1,9 +1,9 @@
 Current:
-
+	3. Background delta thing
 
 Main: 
-	2. Learn how to export and publish and stuff
-	3. Background delta thing
+	4. screen size 
+	2. Learn how to export html
 	
 Optional:
 	2. improve UI

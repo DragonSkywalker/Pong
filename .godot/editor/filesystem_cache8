@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1699256493
+::res://::1699584157
 ToDo.txt::TextFile::-1::1699256493::0::1::::<><>::
 ::res://Assets/::1699347203
 Ball.png::CompressedTexture2D::1619988727388167459::1699252882::1699252907::1::::<><>::
@@ -8,7 +8,7 @@ Player.png::CompressedTexture2D::4321073509198541703::1699253835::1699253845::1:
 PlayerV2.png::CompressedTexture2D::2437855951222191958::1699254444::1699254453::1::::<><>::
 red.png::CompressedTexture2D::7503737919089544601::1699343805::1699344335::1::::<><>::
 Yellow Effect Bullet Impact Explosion 32x32.png::CompressedTexture2D::1575308459314578490::1699344818::1699344821::1::::<><>::
-::res://Assets/Clouds/::1699347197
+::res://Assets/Clouds/::1699347204
 1.png::CompressedTexture2D::8513472961986564469::1699347197::1699347204::1::::<><>::
 2.png::CompressedTexture2D::5821690190994196227::1699347197::1699347204::1::::<><>::
 3.png::CompressedTexture2D::7845902764875552730::1699347197::1699347204::1::::<><>::
@@ -22,18 +22,20 @@ FB004.png::CompressedTexture2D::7300212742305563412::1576722622::1699255063::1::
 FB005.png::CompressedTexture2D::263288224336336364::1576722622::1699255063::1::::<><>::
 ::res://Global/::1699251467
 Game.gd::GDScript::-1::1699251467::0::1::::<>Node<>::
-::res://Main Scenes/::1699346981
+::res://Main Scenes/::1699583607
+Background.gd::GDScript::-1::1699347895::0::1::::<>ParallaxBackground<>::
+Background.tscn::PackedScene::5961670554823852187::1699583607::0::1::::<><>::res://Main Scenes/Background.gd<>uid://dtj8wkfr5ww6p::::res://Assets/Clouds/1.png<>uid://co7cnfif2wtm6::::res://Assets/Clouds/2.png<>uid://dj1u4wknnblm5::::res://Assets/Clouds/3.png<>uid://8g0ocw32fnu7::::res://Assets/Clouds/4.png<>uid://dmubku3tyel2n::::res://Assets/Clouds/5.png
 field.gd::GDScript::-1::1699251467::0::1::::<>Node2D<>::
-field.tscn::PackedScene::52784819264766020::1699346981::0::1::::<><>::res://Main Scenes/field.gd<>uid://dswn8enkyxmbd::::res://Objects/ball.tscn<>uid://cy047ed2uj07y::::res://Objects/player.tscn
+field.tscn::PackedScene::52784819264766020::1699583607::0::1::::<><>::res://Main Scenes/field.gd<>uid://dswn8enkyxmbd::::res://Objects/ball.tscn<>uid://cy047ed2uj07y::::res://Objects/player.tscn
 game_result.gd::GDScript::-1::1699182113::0::1::::<>Node2D<>::
 game_result.tscn::PackedScene::8248070099927622856::1699107168::0::1::::<><>::res://Main Scenes/game_result.gd<>res://Main Scenes/Winner.gd
 menu.gd::GDScript::-1::1699251704::0::1::::<>Node2D<>::
-menu.tscn::PackedScene::6904161395077345308::1699346981::0::1::::<><>::res://Main Scenes/menu.gd
+menu.tscn::PackedScene::6904161395077345308::1699583607::0::1::::<><>::res://Main Scenes/menu.gd
 score.gd::GDScript::-1::1699156880::0::1::::<>Label<>::
-score_selection.tscn::PackedScene::5496852742338593215::1699157693::0::1::::<><>::res://Main Scenes/score.gd
+score_selection.tscn::PackedScene::5496852742338593215::1699583607::0::1::::<><>::res://Main Scenes/score.gd
 Winner.gd::GDScript::-1::1699103810::0::1::::<>Label<>::
-::res://Objects/::1699346981
+::res://Objects/::1699583607
 ball.gd::GDScript::-1::1699256405::0::1::::<>CharacterBody2D<>::
-ball.tscn::PackedScene::8468926029921228941::1699346981::0::1::::<><>::res://Objects/ball.gd<>uid://kcwhcy224ov7::::res://Assets/Fireball/FB001.png<>uid://xcy8if261p5l::::res://Assets/Ball.png<>uid://p7al0gq2di7s::::res://Assets/Fireball/FB002.png<>uid://4numm4w1su7i::::res://Assets/Fireball/FB003.png<>uid://dcajo4rkftosq::::res://Assets/Fireball/FB004.png<>uid://d0sk3j1ru10c::::res://Assets/Fireball/FB005.png
+ball.tscn::PackedScene::8468926029921228941::1699583607::0::1::::<><>::res://Objects/ball.gd<>uid://kcwhcy224ov7::::res://Assets/Fireball/FB001.png<>uid://xcy8if261p5l::::res://Assets/Ball.png<>uid://p7al0gq2di7s::::res://Assets/Fireball/FB002.png<>uid://4numm4w1su7i::::res://Assets/Fireball/FB003.png<>uid://dcajo4rkftosq::::res://Assets/Fireball/FB004.png<>uid://d0sk3j1ru10c::::res://Assets/Fireball/FB005.png
 player.gd::GDScript::-1::1699346981::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::6510801212727338596::1699346981::0::1::::<><>::res://Objects/player.gd<>uid://wpddn2ccdtyg::::res://Assets/Yellow Effect Bullet Impact Explosion 32x32.png<>uid://bay6ep3ii80oo::::res://Assets/PlayerV2.png<>uid://bqm52fqj7t5va::::res://Assets/blu.png<>uid://de54p5drwuk14::::res://Assets/red.png
+player.tscn::PackedScene::6510801212727338596::1699583607::0::1::::<><>::res://Objects/player.gd<>uid://wpddn2ccdtyg::::res://Assets/Yellow Effect Bullet Impact Explosion 32x32.png<>uid://bay6ep3ii80oo::::res://Assets/PlayerV2.png<>uid://bqm52fqj7t5va::::res://Assets/blu.png<>uid://de54p5drwuk14::::res://Assets/red.png

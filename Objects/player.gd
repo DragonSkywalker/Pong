@@ -23,7 +23,8 @@ func _physics_process(delta):
 			velocity.y = direction * Game.playerSpeed
 		else:
 			velocity.y = move_toward(velocity.x, 0, Game.playerSpeed)
-		if Input.is_action_just_pressed("player%d_dash" % whichP) and dashLeft > 0 and get_node("../Ball").hasStarted:
+		if Input.is_action_just_pressed("player%d_dash" % whichP) and dashLeft > 0 \
+		and get_node("../Ball").hasStarted:
 			dashDirection = Input.get_axis("player%d_up" % whichP, "player%d_down" % whichP)
 			if dashDirection:
 				dashing = true

@@ -2,7 +2,7 @@ Current:
 
 Main: 
 	1. Make editable text file that modifies the game
-	2. improve UI
 	
 Optional:
+	2. improve UI
 	4. Make a bot

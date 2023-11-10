@@ -17,7 +17,7 @@ func _physics_process(delta):
 		if not direction.is_normalized():
 			direction = direction.normalized()
 		get_node("Fire").visible = true
-#		get_node("Fire").rotation = rotateFormula(direction)
+		get_node("Fire").rotation = direction.angle()
 		
 		velocity = direction * Game.ballSpeed * delta
 		

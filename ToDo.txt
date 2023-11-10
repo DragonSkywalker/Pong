@@ -2,6 +2,7 @@ Current:
 
 Main: 
 	1. Make editable text file that modifies the game
+	2. Learn how to export and publish and stuff
 	
 Optional:
 	2. improve UI

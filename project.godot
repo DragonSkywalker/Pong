@@ -18,7 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 Game="*res://Global/Game.gd"
-Background="*res://Main Scenes/Background.tscn"
+Background="*res://Global/Background.tscn"
 
 [input]
 

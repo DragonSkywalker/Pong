@@ -1,0 +1,104 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfupbs0qoqs0s"]
+
+[ext_resource type="Script" path="res://Main Scenes/setting.gd" id="1_j3c7n"]
+
+[node name="Setting" type="Node2D"]
+script = ExtResource("1_j3c7n")
+
+[node name="Back" type="Button" parent="."]
+offset_left = 13.0
+offset_top = 14.0
+offset_right = 82.0
+offset_bottom = 45.0
+text = "Back
+"
+
+[node name="KeepBallSpeed" type="CheckButton" parent="."]
+offset_left = 192.0
+offset_top = 64.0
+offset_right = 368.0
+offset_bottom = 95.0
+button_pressed = true
+text = "回合之间球速不变"
+
+[node name="PlayerSpeed" type="TextEdit" parent="."]
+offset_left = 336.0
+offset_top = 112.0
+offset_right = 418.0
+offset_bottom = 150.0
+placeholder_text = "500"
+
+[node name="DashSpeed" type="TextEdit" parent="."]
+offset_left = 336.0
+offset_top = 176.0
+offset_right = 418.0
+offset_bottom = 214.0
+placeholder_text = "2000"
+
+[node name="BallInitialSpeed" type="TextEdit" parent="."]
+offset_left = 336.0
+offset_top = 240.0
+offset_right = 418.0
+offset_bottom = 278.0
+placeholder_text = "500"
+
+[node name="BallAcceleration" type="TextEdit" parent="."]
+offset_left = 336.0
+offset_top = 304.0
+offset_right = 418.0
+offset_bottom = 342.0
+placeholder_text = "30"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 120.0
+offset_right = 264.0
+offset_bottom = 146.0
+rotation = 0.00194729
+text = "板子速度"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 184.0
+offset_right = 264.0
+offset_bottom = 210.0
+rotation = 0.00194729
+text = "冲刺速度"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 248.0
+offset_right = 264.0
+offset_bottom = 274.0
+rotation = 0.00194729
+text = "球初始速度"
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 200.0
+offset_top = 312.0
+offset_right = 280.0
+offset_bottom = 338.0
+rotation = 0.00194729
+text = "球撞板子加的速度"
+
+[node name="Save" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 384.0
+offset_right = 296.0
+offset_bottom = 424.0
+text = "保存设置"
+
+[node name="Default" type="Button" parent="."]
+offset_left = 328.0
+offset_top = 384.0
+offset_right = 464.0
+offset_bottom = 424.0
+text = "恢复默认设置"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="toggled" from="KeepBallSpeed" to="." method="_on_keep_ball_speed_toggled"]
+[connection signal="text_changed" from="PlayerSpeed" to="." method="_on_player_speed_text_changed"]
+[connection signal="text_set" from="PlayerSpeed" to="." method="_on_player_speed_text_set"]
+[connection signal="text_changed" from="DashSpeed" to="." method="_on_dash_speed_text_changed"]
+[connection signal="text_changed" from="BallInitialSpeed" to="." method="_on_ball_initial_speed_text_changed"]
+[connection signal="text_changed" from="BallAcceleration" to="." method="_on_ball_acceleration_text_changed"]

@@ -1,0 +1,5 @@
+keepSpeedBetweenRounds = true
+playerSpeed = 500.0
+dashSpeed = 2000.0
+ballAcceleration = 30.0
+ballInitialSpeed = 500.0

@@ -1,5 +1,5 @@
 Current:
-	2. Add random vertical deviation when hitting the ball
+	fix fireball effect rotation
 
 Main: 
 	1. Make editable text file that modifies the game

@@ -2,20 +2,22 @@ extends CharacterBody2D
 
 var direction: Vector2
 var hasStarted = false
-var collideTimes = 0
+var rng = RandomNumberGenerator.new()
 const initDistanceFromPlayer = Vector2(40, 0)
 
 func _ready():
 	if not Game.keepSpeedBetweenRounds:
 		Game.ballSpeed = Game.ballInitialSpeed
 	
-	var rng2 = RandomNumberGenerator.new()
-	direction.y = rng2.randi_range(0, 1) * 2 - 1
+	direction.y = rng.randi_range(0, 1) * 2 - 1
+	direction.y *= rng.randf_range(0.8, 1.2)
 
 func _physics_process(delta):
 	if hasStarted: 
+		if not direction.is_normalized():
+			direction = direction.normalized()
 		get_node("Fire").visible = true
-		get_node("Fire").rotation = rotateFormula(direction)
+#		get_node("Fire").rotation = rotateFormula(direction)
 		
 		velocity = direction * Game.ballSpeed * delta
 		
@@ -23,8 +25,8 @@ func _physics_process(delta):
 		
 		if collision:
 			if collision.get_collider().is_class("CharacterBody2D"):
-				collideTimes += 1
-				direction.x *= -1
+				direction.x = sign(direction.x) * -1
+				direction.y = sign(direction.y) * rng.randf_range(0.8, 1.2)
 				if Game.ballSpeed <= 2000:
 					Game.ballSpeed += Game.ballAcceleration
 			else:
@@ -33,13 +35,12 @@ func _physics_process(delta):
 		if Game.lastLoser == 1:
 			position = get_node("../Player1").position + initDistanceFromPlayer
 			direction.x = 1
-			
 		elif Game.lastLoser == 2:
 			position = get_node("../Player2").position - initDistanceFromPlayer
 			direction.x = -1
 		else:
-			var rng = RandomNumberGenerator.new()
 			Game.lastLoser = rng.randi_range(1, 2)
 
 func rotateFormula(v: Vector2):
-	return (-v.x + 2) * v.y * PI / 4
+#	return (-v.x + 2) * v.y * PI / 4
+	pass

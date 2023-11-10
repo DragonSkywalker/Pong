@@ -8,10 +8,10 @@ func _ready():
 
 func reload():
 	get_node("KeepBallSpeed").button_pressed = Game.keepSpeedBetweenRounds
-	get_node("PlayerSpeed").placeholder_text = str(Game.playerSpeed)
-	get_node("DashSpeed").placeholder_text = str(Game.dashSpeed)
-	get_node("BallInitialSpeed").placeholder_text = str(Game.ballInitialSpeed)
-	get_node("BallAcceleration").placeholder_text = str(Game.ballAcceleration)
+	get_node("PlayerSpeed").text = str(Game.playerSpeed)
+	get_node("DashSpeed").text = str(Game.dashSpeed)
+	get_node("BallInitialSpeed").text = str(Game.ballInitialSpeed)
+	get_node("BallAcceleration").text = str(Game.ballAcceleration)
 
 func _on_keep_ball_speed_toggled(button_pressed):
 	if button_pressed:
@@ -37,6 +37,7 @@ func _on_back_pressed():
 
 func _on_save_pressed():
 	Utils.saveSetting()
+	reload()
 
 func _on_default_pressed():
 	Utils.loadDefaultSetting()

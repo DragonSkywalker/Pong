@@ -1,1 +1,1 @@
-{"ballAccelerationSpeed":30,"ballInitialSpeed":500,"dashSpeed":2000,"keepSpeedBetweenRounds":true,"playerSpeed":500}
+{"ballAccelerationSpeed":30,"ballInitialSpeed":500,"dashSpeed":2000,"dashTimes":5,"keepSpeedBetweenRounds":true,"playerSpeed":500}

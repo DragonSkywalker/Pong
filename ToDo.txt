@@ -1,5 +1,5 @@
 Current:
-	What if no text? Solve placeholder text schenanigans
+
 
 Main: 
 	2. Learn how to export and publish and stuff

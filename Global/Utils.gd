@@ -11,6 +11,7 @@ func saveSetting():
 		"dashSpeed" : Game.dashSpeed,
 		"ballInitialSpeed" : Game.ballInitialSpeed,
 		"ballAccelerationSpeed" : Game.ballAcceleration,
+		"dashTimes" : Game.dashTimes,
 	}
 	var jstr = JSON.stringify(data)
 	file.store_line(jstr)
@@ -26,6 +27,7 @@ func loadSetting(filePath: String = SAVED_PATH):
 				Game.dashSpeed = current_line["dashSpeed"]
 				Game.ballInitialSpeed = current_line["ballInitialSpeed"]
 				Game.ballAcceleration = current_line["ballAccelerationSpeed"]
+				Game.dashTimes = current_line["dashTimes"]
 
 func loadDefaultSetting():
 	loadSetting(DEFAULT_PATH)

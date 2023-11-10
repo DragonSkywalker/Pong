@@ -1,8 +1,5 @@
 extends Node2D
 
-const DEFAULT_PATH = "res://Global/DefaultSetting.bin"
-const SAVED_PATH = "res://Global/SavedSetting.bin"
-
 func _ready():
 	reload()
 
@@ -12,6 +9,7 @@ func reload():
 	get_node("DashSpeed").text = str(Game.dashSpeed)
 	get_node("BallInitialSpeed").text = str(Game.ballInitialSpeed)
 	get_node("BallAcceleration").text = str(Game.ballAcceleration)
+	get_node("DashTimes").text = str(Game.dashTimes)
 
 func _on_keep_ball_speed_toggled(button_pressed):
 	if button_pressed:
@@ -31,6 +29,9 @@ func _on_ball_initial_speed_text_changed():
 func _on_ball_acceleration_text_changed():
 	Game.ballAcceleration = int(get_node("BallAcceleration").text)
 
+func _on_dash_times_text_changed():
+	Game.dashTimes = int(get_node("DashTimes").text)
+	
 func _on_back_pressed():
 	get_tree().change_scene_to_file("res://Main Scenes/menu.tscn")
 
@@ -46,3 +47,5 @@ func _on_default_pressed():
 func _on_load_pressed():
 	Utils.loadSetting()
 	reload()
+
+

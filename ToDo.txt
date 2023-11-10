@@ -1,8 +1,6 @@
 Current:
-	3. Background delta thing
 
 Main: 
-	4. screen size 
 	2. Learn how to export html
 	
 Optional:

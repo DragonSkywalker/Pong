@@ -2,8 +2,7 @@ Current:
 
 Main: 
 	1. Make editable text file that modifies the game
-	2. Add random vertical deviation when hitting the ball
-	3. Add background
+	2. improve UI
 	
 Optional:
 	4. Make a bot

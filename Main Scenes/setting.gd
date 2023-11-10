@@ -1,9 +1,12 @@
 extends Node2D
 
-const DEFAULT_PATH = "res://Global/DefaultSetting.txt"
-const SAVED_PATH = "res://Global/SavedSetting.txt"
+const DEFAULT_PATH = "res://Global/DefaultSetting.bin"
+const SAVED_PATH = "res://Global/SavedSetting.bin"
 
 func _ready():
+	reload()
+
+func reload():
 	get_node("KeepBallSpeed").button_pressed = Game.keepSpeedBetweenRounds
 	get_node("PlayerSpeed").placeholder_text = str(Game.playerSpeed)
 	get_node("DashSpeed").placeholder_text = str(Game.dashSpeed)
@@ -32,5 +35,13 @@ func _on_back_pressed():
 	get_tree().change_scene_to_file("res://Main Scenes/menu.tscn")
 
 
-func saveSetting():
-	var file = FileAccess.open(SAVE_PATH, FileAccess.WRITE)
+func _on_save_pressed():
+	Utils.saveSetting()
+
+func _on_default_pressed():
+	Utils.loadDefaultSetting()
+	reload()
+
+func _on_load_pressed():
+	Utils.loadSetting()
+	reload()

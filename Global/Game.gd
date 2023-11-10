@@ -1,5 +1,6 @@
 extends Node
 
+var firstTimeLoad = true
 var winner = 0
 var maxScore = 0
 var player1Score = 0

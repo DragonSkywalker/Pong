@@ -13,7 +13,7 @@ config_version=5
 config/name="PongV2"
 run/main_scene="res://Main Scenes/menu.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://Assets/Ball.png"
 
 [autoload]
 
